@@ -14,7 +14,7 @@ devtools::install_github("lbuk/elevate")
 library(elevate)
 ```
 
-### Functions and Usaged
+### Functions and Usage
 The functions of elevate include: 
 * elevations
 * extension_elevations
