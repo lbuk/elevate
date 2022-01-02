@@ -17,7 +17,7 @@ elevations(n_buildings, min_storey, max_storey)
 Small multiple charts depicting building elevations and the number of possible combinations
 }
 \description{
-Function for creating building elevations and the number of possible combinations using permutations.
+Function for charting building elevations and the number of possible combinations using permutations.
 }
 \examples{
 elevations(n_buildings = 7, min_storey = 4, max_storey = 5)

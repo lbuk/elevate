@@ -1,6 +1,6 @@
 #' Building Elevations
 #'
-#' Function for creating building elevations and the number of possible combinations using permutations.
+#' Function for charting building elevations and the number of possible combinations using permutations.
 #'
 #' @param max_storey Maximum permitted storey
 #' @param min_storey Minimum permitted storey
