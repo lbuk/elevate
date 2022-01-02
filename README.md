@@ -21,7 +21,7 @@ The functions of elevate include:
 
 ```
 # elevations
-# elevations visualises the elevations and prints the number of combinations in the console.
+# elevations visualises the possible elevations based on the minimum and maximum permitted storey. It also prints the number of combinations in the console.
 # Specify the number of buildings along the x-axis and the minimum and maximum permitted storey along the y-axis. 
 elevations(n_buildings = 7, min_storey = 4, max_storey = 5)
 ```
@@ -29,7 +29,7 @@ elevations(n_buildings = 7, min_storey = 4, max_storey = 5)
 
 ```
 # extension_elevations
-# extension_elevations visualises the elevations, possible rooftop extensions that could be constructed. It also prints the number of combinations in the console.
+# extension_elevations visualises building elevations and possible rooftop extensions that could be constructed based on the maximum permitted storey. It additionally prints the number of combinations in the console.
 # Specify the existing elevations in a dataframe (see example) along the x-axis and the maximum permitted storey along the y-axis.
 extension_elevations(df = data.frame(building_1 = 3, building_2 = 3, building_3 = 4, building_4 = 4), max_permitted_storey = 6)
 ```
