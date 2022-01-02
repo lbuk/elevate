@@ -9,7 +9,7 @@ elevate is an R package for charting building elevations based on permutations.
 install.packages("devtools")
 library(devtools)
 
-# Install equiparate from Github
+# Install elevate from Github
 devtools::install_github("lbuk/elevate")
 library(elevate)
 ```
