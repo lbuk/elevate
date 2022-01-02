@@ -2,7 +2,6 @@
 #'
 #' Function for creating building elevations and the number of possible combinations using permutations.
 #'
-#' @param df Data frame containing building elevations by storey
 #' @param max_storey Maximum permitted storey
 #' @param min_storey Minimum permitted storey
 #' @param n_buildings Number of buildings
