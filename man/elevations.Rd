@@ -2,7 +2,7 @@
 % Please edit documentation in R/elevations.R
 \name{elevations}
 \alias{elevations}
-\title{Building Elevations}
+\title{Create Visualisations of Building Elevations}
 \usage{
 elevations(n_buildings, min_storey, max_storey)
 }

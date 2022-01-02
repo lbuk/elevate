@@ -2,7 +2,7 @@
 % Please edit documentation in R/extension_elevations.R
 \name{extension_elevations}
 \alias{extension_elevations}
-\title{Building Elevations for Potential Rooftop Extensions}
+\title{Create Visualisations of Building Elevations for Rooftop Extensions}
 \usage{
 extension_elevations(df, max_permitted_storey)
 }

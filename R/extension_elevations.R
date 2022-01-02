@@ -1,4 +1,4 @@
-#' Building Elevations for Potential Rooftop Extensions
+#' Create Visualisations of Building Elevations for Rooftop Extensions
 #'
 #' Function for charting building elevation small multiples for potential rooftop extensions using permutations.
 #'

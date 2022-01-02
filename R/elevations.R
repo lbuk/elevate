@@ -1,4 +1,4 @@
-#' Building Elevations
+#' Create Visualisations of Building Elevations
 #'
 #' Function for charting building elevations and the number of possible combinations using permutations.
 #'
