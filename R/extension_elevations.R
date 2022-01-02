@@ -4,7 +4,7 @@
 #'
 #' @param df Data frame containing building elevations including the number of storeys
 #' @param max_permitted_storey Maximum permitted storey
-#' @return Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of possible combinations in the console
+#' @return Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of possible combinations
 #' @examples
 #' extension_elevations(df = df, max_permitted_storey = 5)
 #' @export
