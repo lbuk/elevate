@@ -12,8 +12,8 @@
 
 elevations = function(n_buildings, min_storey, max_storey) {
   
-  vector_combinations = rep(list(min_storey:max_storey), n_buildings)
-  df_elevations = expand.grid(vector_combinations)
+  elevations_combinations = rep(list(min_storey:max_storey), n_buildings)
+  df_elevations = expand.grid(elevations_combinations)
   
   df_elevations$rowid = 1:nrow(df_elevations)
   
