@@ -16,8 +16,8 @@ library(elevate)
 
 ### Functions and Use
 The functions of elevate include: 
-* elevations
-* extension_elevations
+* elevations. Type '??elevations' for the documentation.
+* extension_elevations. Type '??extension_elevations' for the documentation.
 
 ```
 # elevations
