@@ -1,6 +1,6 @@
-#' Building Elevations for Rooftop Extensions
+#' Building Elevations for Potential Rooftop Extensions
 #'
-#' Function for creating building elevation small multiples for rooftop extensions using permutations.
+#' Function for creating building elevation small multiples for potential rooftop extensions using permutations.
 #'
 #' @param df Data frame containing building elevations including the number of storeys
 #' @param max_permitted_storey Maximum permitted storey

@@ -2,7 +2,7 @@
 % Please edit documentation in R/extension_elevations.R
 \name{extension_elevations}
 \alias{extension_elevations}
-\title{Building Elevations for Rooftop Extensions}
+\title{Building Elevations for Potential Rooftop Extensions}
 \usage{
 extension_elevations(df, max_permitted_storey)
 }
@@ -15,7 +15,7 @@ extension_elevations(df, max_permitted_storey)
 Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of possible combinations in the console
 }
 \description{
-Function for creating building elevation small multiples for rooftop extensions using permutations.
+Function for creating building elevation small multiples for potential rooftop extensions using permutations.
 }
 \examples{
 extension_elevations(df = df, max_permitted_storey = 5)
