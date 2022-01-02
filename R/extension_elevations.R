@@ -3,7 +3,7 @@
 #' Function for creating building elevation small multiples for rooftop extensions using permutations.
 #'
 #' @param df Data frame containing building elevations including the number of storeys
-#' @param max_storey Maximum permitted storey
+#' @param max_permitted_storey Maximum permitted storey
 #' @return Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of possible combinations in the console
 #' @examples
 #' extension_elevations(df = df, max_permitted_storey = 5)

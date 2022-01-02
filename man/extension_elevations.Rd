@@ -9,7 +9,7 @@ extension_elevations(df, max_permitted_storey)
 \arguments{
 \item{df}{Data frame containing building elevations including the number of storeys}
 
-\item{max_storey}{Maximum permitted storey}
+\item{max_permitted_storey}{Maximum permitted storey}
 }
 \value{
 Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of possible combinations in the console
