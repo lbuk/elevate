@@ -21,16 +21,16 @@ The functions of elevate include:
 
 ```
 # elevations
-# Specify the number of buildings, the minimum and maximum permitted storey. 
 # elevations visualises the elevations and prints the number of combinations in the console.
+# Specify the number of buildings, the minimum and maximum permitted storey. 
 elevations(n_buildings = 7, min_storey = 4, max_storey = 5)
 ```
 ![](https://github.com/lbuk/elevate/blob/master/img/elevations_example.png)
 
 ```
 # extension_elevations
-# Specify the existing elevations in a dataframe (see example) and the maximum permitted storey. 
 # extension_elevations visualises the elevations, possible rooftop extensions that could be constructed. It also prints the number of combinations in the console.
+# Specify the existing elevations in a dataframe (see example) and the maximum permitted storey.
 extension_elevations(df = data.frame(building_1 = 3, building_2 = 3, building_3 = 4, building_4 = 4), max_permitted_storey = 6)
 ```
 ![](https://github.com/lbuk/elevate/blob/master/img/extension_elevations_example.png)
