@@ -6,7 +6,7 @@
 #' @param max_storey Maximum permitted storey
 #' @return Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of possible combinations in the console
 #' @examples
-#' extension_elevations(df = df, max_storey = 5)
+#' extension_elevations(df = df, max_permitted_storey = 5)
 #' @export
 
 extension_elevations = function(df, max_permitted_storey) {

@@ -18,5 +18,5 @@ Small multiple charts depicting rooftop extension elevations according to the ma
 Function for creating building elevation small multiples for rooftop extensions using permutations.
 }
 \examples{
-extension_elevations(df = df, max_storey = 5)
+extension_elevations(df = df, max_permitted_storey = 5)
 }
