@@ -1,0 +1,37 @@
+#' Building Elevations
+#'
+#' Function for creating building elevations and the number of possible combinations using permutations.
+#'
+#' @param df Data frame containing building elevations by storey
+#' @param max_storey Maximum permitted storey
+#' @param min_storey Minimum permitted storey
+#' @param n_buildings Number of buildings
+#' @return Small multiple charts depicting building elevations and the number of possible combinations in the console
+#' @examples
+#' elevations(n_buildings = 7, min_storey = 4, max_storey = 5)
+#' @export
+
+elevations = function(n_buildings, min_storey, max_storey) {
+  
+  vector_combinations = rep(list(min_storey:max_storey), n_buildings)
+  df_elevations = expand.grid(vector_combinations)
+  
+  df_elevations$rowid = 1:nrow(df_elevations)
+  
+  df_elevations$sum = rowSums(df_elevations[,1:n_buildings])
+  df_elevations = df_elevations[order(df_elevations$sum),]
+  
+  nrow = nrow(df_elevations)
+  
+  cat("Number of possible combinations:", nrow)
+  
+  y = ceiling(nrow(df_elevations)/10)
+  
+  par(mfrow = c(y, 10), mar = c(0.2, 0.2, 0.54, 0.2))
+  
+  for (i in 1:length(df_elevations[,1])) {
+    buildings = df_elevations[i, 1:n_buildings]
+    barplot(as.numeric(buildings), ylim = c(0, max_storey), col = "#cccccc", border = F, space = 0.075, axes = F)
+    abline(h = seq(1, 8, 1), col = "white", lwd = 0.85)
+  }
+}
