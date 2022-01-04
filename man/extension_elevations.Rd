@@ -15,7 +15,7 @@ extension_elevations(df, max_permitted_storey)
 Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of possible combinations
 }
 \description{
-Function for charting building elevation small multiples for potential rooftop extensions using permutations.
+Function for charting building elevation small multiples for rooftop extensions using permutations.
 }
 \examples{
 extension_elevations(df = df, max_permitted_storey = 5)
