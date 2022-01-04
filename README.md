@@ -1,7 +1,7 @@
 # elevate
 
 ### Overview
-elevate is an R package for charting building elevations based on permutations and planning policies.
+elevate is an R package for charting building elevations based on permutations.
 
 ### Installation
 ```
@@ -21,7 +21,7 @@ The functions of elevate include:
 
 ```
 # elevations
-# elevations visualises the possible elevations based on the minimum and maximum permitted storey. It also prints the number of combinations in the console. The buildings are shown along the x-axis and the storeys along the y-axis.
+# elevations visualises the possible elevations based on the minimum and maximum storey. It also prints the number of combinations in the console. The buildings are shown along the x-axis and the storeys along the y-axis.
 # Specify the number of buildings and the minimum and maximum permitted storey. 
 elevations(n_buildings = 7, min_storey = 4, max_storey = 5)
 ```
