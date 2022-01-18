@@ -25,7 +25,7 @@ The functions of elevate include:
 # Specify the number of buildings and the minimum and maximum permitted storey. 
 elevations(n_buildings = 7, min_storey = 4, max_storey = 5)
 ```
-![](https://github.com/lbuk/elevate/blob/master/img/elevate_elevations_example_chart.png)
+![](https://github.com/lbuk/elevate/blob/master/img/elevate_elevations_chart_example.png)
 
 ```
 # extension_elevations
@@ -33,4 +33,4 @@ elevations(n_buildings = 7, min_storey = 4, max_storey = 5)
 # Specify the existing elevations in a dataframe (see example) and the maximum permitted storey.
 extension_elevations(df = data.frame(building_1 = 3, building_2 = 2, building_3 = 4, building_4 = 3, building_5 = 3, building_6 = 4, building_7 = 3), max_permitted_storey = 4)
 ```
-![](https://github.com/lbuk/elevate/blob/master/img/elevate_extension_elevations_example_chart.png)
+![](https://github.com/lbuk/elevate/blob/master/img/elevate_extension_elevations_chart_example.png)
