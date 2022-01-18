@@ -6,7 +6,7 @@
 #' @param max_permitted_storey Maximum permitted storey
 #' @return Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of possible combinations
 #' @examples
-#' extension_elevations(df = df, max_permitted_storey = 5)
+#' extension_elevations(df = data.frame(building_1 = 3, building_2 = 2, building_3 = 4, building_4 = 3, building_5 = 3, building_6 = 4), max_permitted_storey = 4)
 #' @export
 
 extension_elevations = function(df, max_permitted_storey) {
@@ -43,7 +43,7 @@ extension_elevations = function(df, max_permitted_storey) {
   for (i in 1:length(df_elevations[,1])) {
     buildings = df_elevations[i, 1:n_buildings]
     
-    barplot(as.numeric(buildings[,1:n_buildings]), ylim = c(0, max_permitted_storey), col = "#2deaff", border = F, space = 0.075, axes = F)
+    barplot(as.numeric(buildings[,1:n_buildings]), ylim = c(0, max_permitted_storey), col = "#00DCF5", border = F, space = 0.075, axes = F)
     if(nrow == 0){cat("")} else{barplot(as.numeric(df[,1:ncol(df)-1]), ylim = c(0, max(df)), col = "#cccccc", border = F, space = 0.075, axes = F, add = T)}
     abline(h = seq(1, 8, 1), col = "white", lwd = 0.7)
 
