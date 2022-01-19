@@ -22,7 +22,7 @@ elevations = function(n_buildings, min_storey, max_storey) {
   
   nrow = nrow(df_elevations)
   
-  cat("Number of possible combinations:", nrow)
+  cat("Number of potential combinations:", nrow)
   
   y = ceiling(nrow(df_elevations)/10)
   

@@ -33,7 +33,7 @@ extension_elevations = function(df, max_permitted_storey) {
   
   if(nrow(df_elevations) == 0) {nrow = 0} else{nrow = nrow(df_elevations)}
   
-  cat("Number of possible combinations:", nrow)
+  cat("Number of potential combinations:", nrow)
   
   if(nrow > 50){x = 8} else{x = 6}
   if(nrow < 6){y = 6} else{y = ceiling(nrow(df_elevations)/x)}
