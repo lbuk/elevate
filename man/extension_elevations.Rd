@@ -12,10 +12,10 @@ extension_elevations(df, max_permitted_storey)
 \item{max_permitted_storey}{Maximum permitted storey}
 }
 \value{
-Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of possible combinations
+Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of potential combinations
 }
 \description{
-Function for charting building elevation small multiples for rooftop extensions using permutations.
+Function for charting building elevation small multiples for rooftop extensions and the number of potential combinations using permutations.
 }
 \examples{
 extension_elevations(df = data.frame(building_1 = 3, building_2 = 2, building_3 = 4, building_4 = 3, building_5 = 3, building_6 = 4), max_permitted_storey = 4)

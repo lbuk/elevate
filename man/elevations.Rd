@@ -14,10 +14,10 @@ elevations(n_buildings, min_storey, max_storey)
 \item{max_storey}{Maximum permitted storey}
 }
 \value{
-Small multiple charts depicting building elevations and the number of possible combinations
+Small multiple charts depicting building elevations and the number of potential combinations
 }
 \description{
-Function for charting building elevations and the number of possible combinations using permutations.
+Function for charting building elevations and the number of potential combinations using permutations.
 }
 \examples{
 elevations(n_buildings = 7, min_storey = 4, max_storey = 5)

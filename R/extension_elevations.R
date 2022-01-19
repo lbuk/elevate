@@ -1,10 +1,10 @@
 #' Create Visualisations of Building Elevations for Rooftop Extensions
 #'
-#' Function for charting building elevation small multiples for rooftop extensions using permutations.
+#' Function for charting building elevation small multiples for rooftop extensions and the number of potential combinations using permutations.
 #'
 #' @param df Data frame containing building elevations including the number of storeys
 #' @param max_permitted_storey Maximum permitted storey
-#' @return Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of possible combinations
+#' @return Small multiple charts depicting rooftop extension elevations according to the maximum storeys permitted and the number of potential combinations
 #' @examples
 #' extension_elevations(df = data.frame(building_1 = 3, building_2 = 2, building_3 = 4, building_4 = 3, building_5 = 3, building_6 = 4), max_permitted_storey = 4)
 #' @export

@@ -1,11 +1,11 @@
 #' Create Visualisations of Building Elevations
 #'
-#' Function for charting building elevations and the number of possible combinations using permutations.
+#' Function for charting building elevations and the number of potential combinations using permutations.
 #'
 #' @param max_storey Maximum permitted storey
 #' @param min_storey Minimum permitted storey
 #' @param n_buildings Number of buildings
-#' @return Small multiple charts depicting building elevations and the number of possible combinations
+#' @return Small multiple charts depicting building elevations and the number of potential combinations
 #' @examples
 #' elevations(n_buildings = 7, min_storey = 4, max_storey = 5)
 #' @export
