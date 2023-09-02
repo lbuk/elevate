@@ -1,0 +1,11 @@
+Package: elevate
+Title: Visualise Potential Building Elevations Using Permutations and Charts
+Version: 2.0.0
+Authors@R: 
+    person(given = "Liam Thomas", family = "Bolton", role = c("aut", "cre"), email = "liamthomasbolton@gmail.com")
+Description: elevate is a package for comparing potential building elevations using permutations and data visualisations.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2
