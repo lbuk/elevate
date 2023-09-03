@@ -8,7 +8,8 @@ extension_elevations(
   storeys = NULL,
   df = NULL,
   max_permitted_storey = NULL,
-  max_permitted_extstorey = NULL
+  max_permitted_extstorey = NULL,
+  output = "plot"
 )
 }
 \arguments{
@@ -19,19 +20,26 @@ extension_elevations(
 \item{max_permitted_storey}{Maximum permitted storey per building}
 
 \item{max_permitted_extstorey}{Maximum permitted storey per extension}
+
+\item{output}{Output of function. Input 'plot' for charts. Input 'data' for a data frame containing the number of storeys per building. Defaults to 'plot'}
 }
 \value{
-Multiple bar charts depicting potential rooftop extension elevations ordered by density as well as a print-out of the number of potential combinations in the console
+Multiple charts depicting potential rooftop extension elevations ordered by density as well as a print-out of the number of potential combinations in the console or a data frame containing the number of storeys per building
 }
 \description{
 Function for charting building elevation small multiples for rooftop extensions and the number of potential combinations using permutations.
 }
 \examples{
+storeys_i = c(3, 3, 4) # Establish the number of storeys per existing building
+
 # Visualise potentials based on the maximum number of storeys per extension
-storeys_i = c(3, 3, 4)
-extension_elevations(storeys = storeys_i, max_permitted_extstorey = 2)
+extension_elevations(storeys = storeys_i, max_permitted_extstorey = 2, output = 'plot')
+
+# Generate a dataset containing permutations of storeys per building
+extension_elevations(storeys = storeys_i, max_permitted_extstorey = 1, output = 'data')
+
+storeys_ii = c(3, 2, 2, 3, 4) # Establish the number of storeys per existing building
 
 # Chart potential extensions using the maximum number of storeys per building
-storeys_ii = c(3, 2, 2, 3, 4)
-extension_elevations(storeys = storeys_ii, max_permitted_storey = 4)
+extension_elevations(storeys = storeys_ii, max_permitted_storey = 4, output = 'plot')
 }

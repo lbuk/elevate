@@ -4,7 +4,7 @@
 \alias{elevations}
 \title{Create Visualisations of Building Elevations}
 \usage{
-elevations(nbuildings, min_storey, max_storey)
+elevations(nbuildings, min_storey, max_storey, output = "plot")
 }
 \arguments{
 \item{nbuildings}{Number of buildings}
@@ -12,13 +12,19 @@ elevations(nbuildings, min_storey, max_storey)
 \item{min_storey}{Minimum permitted storey per building}
 
 \item{max_storey}{Maximum permitted storey per building}
+
+\item{output}{Output of function. Input 'plot' for charts. Input 'data' for a data frame containing the number of storeys per building}
 }
 \value{
-Small multiple charts depicting building elevations and a print-out of the number of potential combinations in the console
+Multiple charts depicting building elevations and a print-out of the number of potential combinations in the console or a data frame containing the number of storeys per building
 }
 \description{
 Function for charting building elevations and the number of potential combinations using permutations.
 }
 \examples{
-elevations(nbuildings = 6, min_storey = 4, max_storey = 5)
+# Charts based on the number of buildings, min storey and max storey
+elevations(nbuildings = 6, min_storey = 4, max_storey = 5, output = 'plot')
+
+# Dataset containing permutations of storeys per building
+elevations(nbuildings = 8, min_storey = 4, max_storey = 6, output = 'data')
 }
