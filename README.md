@@ -19,8 +19,10 @@ elevations(nbuildings = 7, min_storey = 3, max_storey = 4)
 ![](https://github.com/lbuk/elevate/blob/master/img/example_elevate_elevations_charts.png)
 
 ```
-# Visualise potential rooftop extension elevations based on the maximum number of storeys per building
+# Establish the number of storeys per building
 storeys = c(4, 5, 4, 4)
+
+# Visualise potential rooftop extension elevations based on the maximum number of storeys per building
 extension_elevations(storeys = storeys, max_permitted_storey = 6)
 ```
 ![](https://github.com/lbuk/elevate/blob/master/img/example_elevate_extension_elevations_charts.png)
