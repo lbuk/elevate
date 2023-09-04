@@ -1,5 +1,5 @@
 Package: elevate
-Title: Visualise Potential Building Elevations Using Permutations and Charts
+Title: Generate and Visualise Building Elevations Using Permutations and Charts
 Version: 2.0.0
 Authors@R: 
     person(given = "Liam Thomas", family = "Bolton", role = c("aut", "cre"), email = "liamthomasbolton@gmail.com")
