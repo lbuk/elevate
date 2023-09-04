@@ -1,7 +1,7 @@
 # elevate
 
 ### Overview
-elevate is an R package for visualising building elevations using permutations and charts.
+elevate is an R package for generating and visualising building elevations using permutations and charts.
 
 ### Installation
 ```
