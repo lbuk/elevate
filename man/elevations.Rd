@@ -2,7 +2,7 @@
 % Please edit documentation in R/elevations.R
 \name{elevations}
 \alias{elevations}
-\title{Create Visualisations of Building Elevations}
+\title{Generate Building Elevation Permutations}
 \usage{
 elevations(nbuildings, min_storey, max_storey, output = "plot")
 }
@@ -19,7 +19,7 @@ elevations(nbuildings, min_storey, max_storey, output = "plot")
 Multiple charts depicting building elevations and a print-out of the number of potential combinations in the console or a data frame containing the number of storeys per building
 }
 \description{
-Function for charting building elevations and the number of potential combinations using permutations.
+Function for charting building elevations and the number of potential combinations using permutations or a data frame of storeys per building.
 }
 \examples{
 # Charts based on the number of buildings, min storey and max storey

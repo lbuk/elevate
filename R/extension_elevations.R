@@ -1,6 +1,6 @@
-#' Create Visualisations of Building Elevations for Rooftop Extensions
+#' Create Permutations of Potential Rooftop Extension Elevations
 #'
-#' Function for charting building elevation small multiples for rooftop extensions and the number of potential combinations using permutations.
+#' Function for generating visualisations of permutations of rooftop extension elevations and the number of potential combinations or a data frame containing storeys per building.
 #'
 #' @param storeys Vector containing the number of storeys per building
 #' @param df Data frame of existing elevations. Each column should represent a building and the data frame should contain one row with the number of storeys per building

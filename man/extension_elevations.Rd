@@ -2,7 +2,7 @@
 % Please edit documentation in R/extension_elevations.R
 \name{extension_elevations}
 \alias{extension_elevations}
-\title{Create Visualisations of Building Elevations for Rooftop Extensions}
+\title{Create Permutations of Potential Rooftop Extension Elevations}
 \usage{
 extension_elevations(
   storeys = NULL,
@@ -27,7 +27,7 @@ extension_elevations(
 Multiple charts depicting potential rooftop extension elevations ordered by density as well as a print-out of the number of potential combinations in the console or a data frame containing the number of storeys per building
 }
 \description{
-Function for charting building elevation small multiples for rooftop extensions and the number of potential combinations using permutations.
+Function for generating visualisations of permutations of rooftop extension elevations and the number of potential combinations or a data frame containing storeys per building.
 }
 \examples{
 storeys_i = c(3, 3, 4) # Establish the number of storeys per existing building

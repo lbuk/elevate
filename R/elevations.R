@@ -1,6 +1,6 @@
-#' Create Visualisations of Building Elevations
+#' Generate Building Elevation Permutations
 #'
-#' Function for charting building elevations and the number of potential combinations using permutations.
+#' Function for charting building elevations and the number of potential combinations using permutations or a data frame of storeys per building.
 #'
 #' @param max_storey Maximum permitted storey per building
 #' @param min_storey Minimum permitted storey per building
