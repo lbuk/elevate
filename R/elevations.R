@@ -48,21 +48,38 @@ elevations = function(nbuildings, min_storey, max_storey, output = 'plot') {
     
     cat("Number of potential combinations:", n, " ")
     
-    y = ceiling(n / 10)
+    if(n < 10) {
+      x = n
+      lwd = 1.5
+      
+    } else if(n > 100 & n <= 400) {
+      x = 20
+      lwd = 1.2
+      
+    } else if(n > 400) {
+      x = 35
+      lwd = 0.425
+      
+    } else {
+      x = 10
+      lwd = 1.5
+    }
+    
+    y = ceiling(n / x)
     
     m = max_storey
     
-    par(mfrow = c(y, 10), mar = c(0.2, 0.2, 2, 0.2))
+    par(mfrow = c(y, x), mar = c(0.2, 0.2, 2, 0.2))
     
     invisible(sapply(1:length(df_el[,1]), function(i) {
       build = df_el[i, 1:nbuildings]
       
       barplot(as.numeric(build), ylim = c(0, m), col = "#D10081", border = F, space = 0.075, axes = F)
       
-      abline(h = seq(1, m, 1), col = "#ffffff", lwd = 1.5)
+      abline(h = seq(1, m, 1), col = "#ffffff", lwd = lwd)
     }))
     
-    plot_legend = function(...) {
+    legend_elcharts = function(...) {
       opar = par(fig = c(0, 1, 0, 1), mar = c(0, 0, 0, 0), oma = c(0, 0, 0, 0), new = T)
       
       on.exit(par(opar))
@@ -72,7 +89,7 @@ elevations = function(nbuildings, min_storey, max_storey, output = 'plot') {
       legend(...)
     }
     
-    plot_legend("topleft", legend = "Storey", cex = 1.05, pch = 15, col = "#D10081", text.font = 2, bty = 'n', horiz = T)
+    legend_elcharts(-1.085, 1.1, legend = "Storey", cex = 1.05, pch = 15, col = "#D10081", text.font = 2, bty = 'n', horiz = T)
     
   } else if(output == 'data') {
     el_data = df_el

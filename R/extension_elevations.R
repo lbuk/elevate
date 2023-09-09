@@ -103,13 +103,23 @@ extension_elevations = function(storeys = NULL, df = NULL, max_permitted_storey 
     
     cat("Number of potential combinations:", n, " ")
     
-    if(n > 50) {
-      x = 8
+    if(n < 8) {
+      x = n
+      lwd = 2
+      
+    } else if(n > 100 & n <= 400) {
+      x = 20
+      lwd = 1.2
+      
+    } else if(n > 400) {
+      x = 35
+      lwd = 0.475
       
     } else {
-      x = 6
+      x = 8
+      lwd = 2
     }
-    
+     
     y = ceiling(n / x)
     
     if(is.null(max_permitted_extstorey) != T && is.null(max_permitted_storey) != T && max_permitted_storey >= max(df)) {
@@ -137,10 +147,10 @@ extension_elevations = function(storeys = NULL, df = NULL, max_permitted_storey 
       
       barplot(as.numeric(df[,1:ncol(df)]), ylim = c(0, max(df)), col = "#D9F045", border = F, space = 0.075, axes = F, add = T)
       
-      abline(h = seq(1, m, 1), col = "#ffffff", lwd = 2)
+      abline(h = seq(1, m, 1), col = "#ffffff", lwd = lwd)
     }))
     
-    plot_legend = function(...) {
+    legend_extcharts = function(...) {
       opar = par(fig = c(0, 1, 0, 1), mar = c(0, 0, 0, 0), oma = c(0, 0, 0, 0), new = T)
       
       on.exit(par(opar))
@@ -150,7 +160,7 @@ extension_elevations = function(storeys = NULL, df = NULL, max_permitted_storey 
       legend(...)
     }
     
-    plot_legend("topleft", legend = rev(c("Existing Storey", "Potential Storey")), cex = 0.9, pch = 15, col = c("#00DCF5", "#D9F045"), text.font = 2, bty = 'n', horiz = F)
+    legend_extcharts(-1.085, 1.1, legend = rev(c("Existing Storey", "Potential Storey")), cex = 0.9, pch = 15, col = c("#00DCF5", "#D9F045"), text.font = 2, bty = 'n', horiz = F)
     
   } else if(output == 'data') {
     ext_data = df_ext
